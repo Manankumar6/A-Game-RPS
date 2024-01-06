@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Cabin+Condensed:wght@600&family=Caprasimo&family=Pacifico&family=Permanent+Marker&family=Roboto:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+
+
+
+    <div class="counter" >
+        <div class="my_img">
+            <img src="img/h.jfif" alt="">
+            <div class="user_img">
+                <img src="img/loginicon.png" id="profile">
+            </div>
+            <label for="input-file" id="label_">Upload Photo</label>
+            <input type="file" id="input-file">
+        </div>
+        <div class="title">
+            <p>Welcome To My Game</p>
+
+           <Div class="scoreBoard" id="counter">
+               <h2 id="computer_score">Manan Score: 0 </h2>
+               <h3 id="move">Move Left:</h3>
+               <h1 id="count">10</h1>
+               <h2 id="user_score" >Player Score</h2>
+            </Div>
+    
+        </div>
+
+
+        <div class="btn">
+            <button onclick="checker('Rock')" id="rock">Rock</button>
+            <button onclick="checker('Paper')" id="paper">Paper</button>
+            <button onclick="checker('Scissor')" id="Scissor">scissor</button>
+        </div>
+
+        <div class="result">
+
+            <p id="computer"></p>   
+            <p id="user"></p>
+            <p id="result" class="fresult"></p>
+        </div>
+        <div class="confirm" id="con_firm">
+            <div class="button">
+                <p id="sho_r"></p>
+                <button class="btn-2" id="Restart" type="button">Restart</button>
+               
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center; 
+    flex-direction: column;
+    background-color: #001a25;
+  
+}
+
+input {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #003147;
+    border: hidden;
+  
+    color: white;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+    transition: opacity 0.2s ease;
+
+}
+:focus::-webkit-input-placeholder {
+    opacity: 0.3;
+}
+
+
+
+#Ok{
+    margin: 10px;
+    background-color: #003147;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: hidden;
+    width: 100px;
+}
+.title_img img{
+    width: 80px;
+
+}
+#s{
+  margin: 10px;
+
+  transition: transform 2s ease ;
+
+}
+#s:hover{
+    transform: translate(-120px);
+
+}
+#p{
+    margin: 10px;
+    transition: transform 2s ease ;
+
+}
+#p:hover{
+    transform: translate(-90px);
+
+}
+#r{
+    margin: 10px;
+    transition: transform 2s ease ;
+}
+#r:hover{
+ 
+    transform: translate(200px);
+
+}
+.input p{
+color: white;
+font-size: 30px;
+}
+    </style>
+</head>
+<body>  
+    <form onsubmit="loginForm()" action="Game.html">
+        <div class="input">
+            <p>Rock Paper & Scissor</p>
+        <div class="title_img">
+            <img src="img/stone.png" alt="" id="r">
+            <img src="img/essay.png" alt="" id="p">
+            <img src="img/scissor.png" alt="" id="s">
+        </div>
+        <input type="text" placeholder="Enter Your Name" id="input_u">
+        <button type="submit" id="Ok" >OK</button>
+    </div>
+</form>
+    <script>
+        function loginForm()
+        {
+            var userID = document.getElementById("input_u").value
+            localStorage.setItem("Id", userID)
+            
+        }
+    </script>
+</body>
+</html>
